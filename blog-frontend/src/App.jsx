@@ -11,11 +11,12 @@ function App() {
   return (
     <>
         <Router>
-            <AppHeader />
             <Routes>
-                <Route path="/" element={<PostList />} />
+                <Route path={"/"} element={<AppHeader />}>
+                <Route index element={<PostList />}/>
                 <Route path="/posts/:id" element={<PostDetail />} />
                 <Route path="/create" element={<CreatePost />} />
+                </Route>
             </Routes>
         </Router>
     </>

@@ -7,6 +7,7 @@ const cors = require("cors");
 
 
 mongoose.connect('mongodb://0.0.0.0:27017/blog', );
+
 app.use(cors({
     methods: ['GET', 'POST','PUT','DELETE'],
     credentials: true,
